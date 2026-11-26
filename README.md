@@ -7,12 +7,15 @@ Screens: Dashboard · Sales / Billing · Purchases · Inventory · Customers · 
 
 ## Run it
 
-Needs Node.js 20+ (or Bun).
+Needs Node.js 20.19 or newer (https://nodejs.org, LTS).
 
 ```bash
-npm install --legacy-peer-deps   # or: bun install
-npm run dev                      # opens on http://localhost:3000
+npm install
+npm run dev        # opens on http://localhost:3000
 ```
+
+Works in VS Code: open this folder, then run the two commands above in the
+built-in terminal (Terminal → New Terminal).
 
 ### Local Mode (no setup)
 
@@ -43,6 +46,13 @@ Moving from Local Mode: **Settings → Download Backup** in Local Mode, then
 ```bash
 npm run build      # static files in dist/ — host on Netlify, Vercel, Cloudflare Pages, etc.
 ```
+
+### Vercel
+
+Import the GitHub repo in Vercel. `vercel.json` already sets Framework = Vite,
+build command `npm run build` and output folder `dist`. To use Online Mode, add
+`VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` under Project Settings →
+Environment Variables, then redeploy. Without them the app runs in Local Mode.
 
 ## How data is kept safe
 
