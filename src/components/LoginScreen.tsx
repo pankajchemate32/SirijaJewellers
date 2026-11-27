@@ -12,7 +12,7 @@ const Brand: React.FC<{ subtitle: string }> = ({ subtitle }) => (
     <div className="flex items-center gap-3">
       <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#B7801A] text-sm font-bold text-white">SJ</div>
       <div>
-        <div className="font-display text-xl font-bold tracking-tight text-slate-900">Sirija Jwellers</div>
+        <div className="font-display text-xl font-bold tracking-tight text-slate-900">Sirija Jewellers</div>
         <div className="text-xs font-medium uppercase tracking-wider text-[#8A5E0B]">Bullion POS &amp; Inventory</div>
       </div>
     </div>
@@ -75,7 +75,7 @@ const CloudLogin: React.FC = () => {
           <p className="text-xs text-slate-500">Signed in as {cloudEmail}</p>
           <ErrorBox text={error} />
           <button type="submit" disabled={busy} className={primaryBtn}>
-            {busy && <Loader2 className="h-4 w-4 animate-spin" />} Set up Sirija Jwellers
+            {busy && <Loader2 className="h-4 w-4 animate-spin" />} Set up Sirija Jewellers
           </button>
           <button type="button" onClick={logout} className="w-full text-sm text-slate-500 hover:text-slate-800">Sign out</button>
         </form>

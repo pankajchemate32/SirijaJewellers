@@ -281,7 +281,7 @@ export const ReportsPage: React.FC = () => {
       return obj;
     });
     exportReportToExcel(
-      `SirijaJwellers_${reportId}_${todayISO()}.xlsx`,
+      `SirijaJewellers_${reportId}_${todayISO()}.xlsx`,
       reportData.title.replace(/^\d+\.\s*/, ''),
       objects
     );
@@ -295,7 +295,7 @@ export const ReportsPage: React.FC = () => {
       reportData.rows,
       reportData.summaryLines,
       db.shop_settings.shop_name,
-      `SirijaJwellers_${reportId}_${todayISO()}.pdf`
+      `SirijaJewellers_${reportId}_${todayISO()}.pdf`
     );
   };
 

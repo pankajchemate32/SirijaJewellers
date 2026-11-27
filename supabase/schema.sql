@@ -1,5 +1,5 @@
 -- =====================================================================
--- Sirija Jwellers — Bullion POS & Inventory
+-- Sirija Jewellers — Bullion POS & Inventory
 -- Supabase / PostgreSQL schema
 --
 -- How to install: open your Supabase project → SQL Editor → paste this
@@ -583,7 +583,7 @@ begin
   insert into public.users (id, name, email, role, pin, active)
   values ('usr_' || substr(md5(random()::text), 1, 10), coalesce(nullif(btrim(p_name), ''), 'Owner'),
           lower(v_email), 'owner', '', true);
-  insert into public.shop_settings (id, shop_name) values ('shop_1', 'Sirija Jwellers')
+  insert into public.shop_settings (id, shop_name) values ('shop_1', 'Sirija Jewellers')
   on conflict (id) do nothing;
   return 'owner';
 end $$;

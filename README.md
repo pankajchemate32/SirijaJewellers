@@ -1,4 +1,4 @@
-# Sirija Jwellers — Bullion POS & Inventory
+# Sirija Jewellers — Bullion POS & Inventory
 
 A simple web app to buy, stock, bill and report MMTC gold and silver coins and bars.
 Every physical coin/bar is tracked by its certificate / serial number.
@@ -33,7 +33,7 @@ only and sample data is loaded. Sample logins:
 2. Open **SQL Editor**, paste the whole of `supabase/schema.sql`, and run it.
 3. Copy `.env.example` to `.env.local` and fill in `VITE_SUPABASE_URL` and
    `VITE_SUPABASE_ANON_KEY` (Project Settings → API).
-4. Start the app, choose **Create a login**, then **Set up Sirija Jwellers**.
+4. Start the app, choose **Create a login**, then **Set up Sirija Jewellers**.
    The first person becomes the **Owner**.
 5. Staff: the Owner adds their email in **Settings → Users**; staff then use
    **Create a login** with that email.
