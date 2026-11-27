@@ -35,7 +35,7 @@ export function createSeedDatabase(): DatabaseState {
 
     shop_settings: {
       id: 'shop_1',
-      shop_name: 'Sirija Jwellers',
+      shop_name: 'Sirija Jewellers',
       address: 'Shop address (update in Settings)',
       phone: '+91 98204 51200',
       email: 'billing@sirija.demo',

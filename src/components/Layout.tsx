@@ -84,7 +84,7 @@ export const Layout: React.FC<LayoutProps> = ({ activeSection, onNavigate, child
         >
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#B7801A] text-xs font-bold tracking-wide text-white shadow-sm">SJ</div>
           <span className="font-display text-lg font-bold tracking-tight text-slate-900">
-            Sirija Jwellers
+            Sirija Jewellers
           </span>
         </button>
         <button

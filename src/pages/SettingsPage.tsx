@@ -128,7 +128,7 @@ export const SettingsPage: React.FC = () => {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `SirijaJwellers_Backup_${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = `SirijaJewellers_Backup_${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
     URL.revokeObjectURL(url);
     notify('success', 'Downloaded JSON backup of all 14 tables.');

@@ -617,7 +617,7 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const restoreBackup = (raw: unknown): { ok: boolean; error?: string } => {
     const data = raw as DatabaseState;
     if (!data || typeof data !== 'object' || !data.shop_settings || !Array.isArray(data.products) || !Array.isArray(data.stock_items)) {
-      return { ok: false, error: 'This file is not a Sirija Jwellers backup.' };
+      return { ok: false, error: 'This file is not a Sirija Jewellers backup.' };
     }
     const blank = createEmptyDatabase();
     const merged = { ...blank, ...data } as DatabaseState;
